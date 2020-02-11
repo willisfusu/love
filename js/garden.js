@@ -141,7 +141,8 @@ Garden.options={
     density:10,
     growSpeed:1000/60,
     // color:{rmin:128,rmax:255,gmin:0,gmax:128,bmin:0,bmax:128,opacity:0.1},
-    color:{rmin:128,rmax:255,gmin:128,gmax:255,bmin:128,bmax:255,opacity:0.1},
+    color:{rmin:180,rmax:255,gmin:90,gmax:128,bmin:90,bmax:128,opacity:0.1},
+    // color:{rmin:255,rmax:255,gmin:185,gmax:200,bmin:0,bmax:0,opacity:0.1},
     tanAngle:60
 };
 Garden.random=function(b,a){
