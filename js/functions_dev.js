@@ -13,7 +13,8 @@ $(function () {
 	gardenCanvas.width = $("#loveHeart").width();
     gardenCanvas.height = $("#loveHeart").height()
     gardenCtx = gardenCanvas.getContext("2d");
-    gardenCtx.globalCompositeOperation = "lighter";
+    // gardenCtx.globalCompositeOperation = "lighter";
+		gardenCtx.globalCompositeOperation = "destination-over";
     garden = new Garden(gardenCtx, gardenCanvas);
 
 	$("#content").css("width", $loveHeart.width() + $("#code").width());

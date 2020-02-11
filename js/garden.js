@@ -51,7 +51,8 @@ Petal.prototype={
         d=e.clone().rotate(Garden.degrad(this.angle));
         c=e.clone().mult(this.stretchA);
         b=d.clone().mult(this.stretchB);
-        a.strokeStyle=this.bloom.c;
+        // a.strokeStyle=this.bloom.c;
+        a.strokeStyle="rgba(182,127,182,0.3)";
         a.beginPath();
         a.moveTo(e.x,e.y);
         a.bezierCurveTo(c.x,c.y,b.x,b.y,d.x,d.y);
@@ -79,7 +80,8 @@ function Bloom(e,d,f,a,b){
 }
 Bloom.prototype={
     draw:function(){
-        var c,b=true;this.garden.ctx.save();
+        var c,b=true;
+        this.garden.ctx.save();
         this.garden.ctx.translate(this.p.x,this.p.y);
         for(var a=0;a<this.petals.length;a++){
             c=this.petals[a];
@@ -92,7 +94,8 @@ Bloom.prototype={
         }
         },
     init:function(){
-        var c=360/this.pc;var b=Garden.randomInt(0,90);
+        var c=360/this.pc;
+        var b=Garden.randomInt(0,90);
         for(var a=0;a<this.pc;a++){
             this.petals.push(new Petal(Garden.random(Garden.options.petalStretch.min,Garden.options.petalStretch.max),Garden.random(Garden.options.petalStretch.min,Garden.options.petalStretch.max),b+a*c,c,Garden.random(Garden.options.growFactor.min,Garden.options.growFactor.max),this))
         }

@@ -23,7 +23,7 @@ width:160px;
 top:100px;
 left:150px;
 border-radius:25px;
-font-family: "Arial","Helvetica Neue";
+font-family: "Helvetica", "Tahoma", "Arial";
 font-weight: bold;
 font-size: 20px;
 letter-spacing: 1px;
@@ -103,7 +103,8 @@ color: #DFDCE3;
 	float: left;
 	width: 440px;
 	height: 400px;
-	color: #333;
+	/* color: #333; */
+	color:#DFDCE3;
 	font-family: "Consolas", "Monaco", "Courier New", "sans-serif";
 	/*font-family: "brush";*/
 	font-size: 18px;
@@ -112,12 +113,13 @@ color: #DFDCE3;
 
 #code .string{
 	/* color: #2a36ff; */
-	color: #FC4A1A;
+	color: #B67FB6;
 }
 
 #code .keyword{
 	/* color: #7f0055; */
-		color: #DFDCE3;
+		/* color: #DFDCE3; */
+		color:#F7B733;
 	font-weight:bold;
 }
 
@@ -132,14 +134,18 @@ color: #DFDCE3;
 
 #code .comments{
 	/* color: #3f7f5f; */
-	color: #F7B733;
+	/* color: #F7B733; */
+	color: #B67FB6;
 }
 
 #copyright{
 	/* margin-top: 10px; */
 	text-align: center;
-	width:100%;
-	color:#666;
+	width:100px;
+	position: absolute;
+	left: 92%;
+	bottom:10px;
+	/* color:#666; */
 }
 
 #errorMsg{
